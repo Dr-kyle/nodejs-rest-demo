@@ -1,6 +1,6 @@
 module.exports = function(app, clients) {
   app.get("/", (req, res) => {
-    res.json({ message: "Welcome to node.js rest api application. Created for learning purposes by Christos Ploutarchou" });
+    res.json({ message: "node js rest api" });
   });
 
   app.get('/es/:id', async (req, res) => {
