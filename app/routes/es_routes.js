@@ -11,7 +11,11 @@ module.exports = function(app, clients) {
   });
 
   app.post('/es/:id', (req, res) => {
+    // path 
     console.log('req.params', req.params)
+    // query string
+    console.log('req.query', req.query)
+    // body
     console.log('req.body', req.body)
     res.json({message: 'post'})
   });
